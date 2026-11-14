@@ -1,0 +1,18 @@
+---
+title: "VIsualização de dados projeto"
+author: "Matilde reis (63899), Miriam Ivanović (63898), Miguel Alves (60220)"
+format: html
+editor: visual
+---
+
+Leitura dos dados
+
+```{r}
+dados.pombos <- read_xlsx("EN tabelas.xlsx")
+```
+
+Gráfico
+
+```{r}
+barplot(dados.pombos$`% que comeu`~dados.pombos$`Distancia (cm)`,ylim=c(0,50),main="Pombos que se aproximaram para comer em cada distância",xlab="Distância (cm)",ylab="Percentagem de pombos", col="lightblue3")
+```
